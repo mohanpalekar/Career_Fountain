@@ -1,4 +1,4 @@
-@Test13
+@Test
 Feature: Sign up on Itera QA site
 
 Background: Common Steps in all scenarios
@@ -6,7 +6,6 @@ Given I am on the homepage of the Itera QA site
 When I click on Sign Up button on homepage
 And I verify signup page is launched
 
-@wi
 Scenario Outline: Sign Up with valid data on QA Itera Site
 And I enter FirstName as <FirstName>
 And I enter LastName as <LastName>
@@ -20,16 +19,14 @@ Then I verify Registration successful message is shown on the screen
 
 Examples:
 | FirstName | LastName | Email | Mobile | UserName | Password | ConfirmPassword |
-| TestFname6 | TestLName6 | TestFName6@itera.com | 1234567890 | TestFName6@itera.com | Test@FName4 | Test@FName4 | 
-| TestFname7 | TestLName7 | TestFName7@itera.com | 1234567890 | TestFName7@itera.com | Test@FName4 | Test@FName4 |
-#| TestFname8 | TestLName8 | TestFName8@itera.com | 1234567890 | TestFName8@itera.com | Test@FName4 | Test@FName4 |
-#| TestFname9 | TestLName9 | TestFName9@itera.com | 1234567890 | TestFName9@itera.com | Test@FName4 | Test@FName4 |
-#| TestFname10 | TestLName10 | TestFName10@itera.com | 1234567890 | TestFName10@itera.com | Test@FName4 | Test@FName4 |
-#| TestFname11 | TestLName11 | TestFName11@itera.com | 1234567890 | TestFName11@itera.com | Test@FName4 | Test@FName4 |
+| TestFname12 | TestLName12 | TestFName12@itera.com | 1234567890 | TestFName12@itera.com | Test@FName4 | Test@FName4 | 
+| TestFname13 | TestLName13 | TestFName13@itera.com | 1234567890 | TestFName13@itera.com | Test@FName4 | Test@FName4 |
+| TestFname14 | TestLName14 | TestFName14@itera.com | 1234567890 | TestFName14@itera.com | Test@FName4 | Test@FName4 |
+| TestFname17 | TestLName17 | TestFName17@itera.com | 1234567890 | TestFName17@itera.com | Test@FName4 | Test@FName4 |
+| TestFname18 | TestLName18 | TestFName18@itera.com | 1234567890 | TestFName18@itera.com | Test@FName4 | Test@FName4 |
+| TestFname19 | TestLName19 | TestFName19@itera.com | 1234567890 | TestFName19@itera.com | Test@FName4 | Test@FName4 |
 
 
-@wi
-@te
 Scenario: Sign Up with invalid data on QA Itera Site
 And I enter FirstName as TestFname3
 And I enter LastName as TestLName3

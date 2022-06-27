@@ -11,7 +11,7 @@ And I click on Login button
 And I verify my login is successful
 
 
-@wip111
+@Test
 Scenario: Edit Customer Details
 And I click on Edit for customer no. 5
 And I verify Edit page is launched

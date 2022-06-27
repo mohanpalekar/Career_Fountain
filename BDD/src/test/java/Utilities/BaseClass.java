@@ -37,8 +37,10 @@ public class BaseClass {
 	@BeforeAll()
 	public static void before_all() {
 		logger.info("Before ALL");
-		cleanUpOldFiles(getProperty("src/test/resources/app.properties", "old_files_path"), Integer.parseInt(getProperty("src/test/resources/app.properties", "days_deletion")));
-	}
+		cleanUpOldFiles(getProperty("src/test/resources/app.properties", "old_files_path_t"), Integer.parseInt(getProperty("src/test/resources/app.properties", "days_deletion")));
+		cleanUpOldFiles(getProperty("src/test/resources/app.properties", "old_files_path_l"), Integer.parseInt(getProperty("src/test/resources/app.properties", "days_deletion")));
+		cleanUpOldFiles(getProperty("src/test/resources/app.properties", "old_files_path_s"), Integer.parseInt(getProperty("src/test/resources/app.properties", "days_deletion")));
+}
 
 	@AfterAll()
 	public static void after_all() {
