@@ -53,7 +53,7 @@ public class BaseClass {
 		jse = (JavascriptExecutor)driver;
 		driver.manage().window().maximize();
 		driver.get(getProperty("src/test/resources/app.properties", "app_url"));
-		logger.info("Chrome Browser Launched...");
+		logger.info("Chrome Browser Launched..."+driver.getCurrentUrl());
 	}
 
 	public void sendInput(By locator, String input) {
@@ -62,7 +62,7 @@ public class BaseClass {
 		HighlightElement(element);
 		element.sendKeys(Keys.CONTROL+"a"+Keys.BACK_SPACE);
 		element.sendKeys(input);
-		logger.info("Sent Input successfully");
+		logger.info("Sent Input successfully --> "+element);
 	}
 
 	public void clickElement(By locator) {
@@ -70,7 +70,7 @@ public class BaseClass {
 		scrollToElement(element);
 		HighlightElement(element);
 		element.click();
-		logger.info("Element clicked successfully");
+		logger.info("Element clicked successfully --> "+element);
 	}
 
 	public String getText(By locator) {
@@ -135,7 +135,7 @@ public class BaseClass {
 		try {
 			jse.executeScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow')", element);
 		}catch (Exception e) {
-			logger.info("Failed to highlight an element "+element);
+			logger.info("Failed to highlight an element --> "+element);
 		}
 	}
 
@@ -143,7 +143,7 @@ public class BaseClass {
 		try {
 			jse.executeScript("arguments[0].scrollIntoView(false);", element);
 		}catch(Exception e) {
-			logger.info("Failed to scroll to an element "+element);
+			logger.info("Failed to scroll to an element --> "+element);
 		}
 	}
 
