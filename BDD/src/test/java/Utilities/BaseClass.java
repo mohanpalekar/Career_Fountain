@@ -49,7 +49,7 @@ public class BaseClass {
 
 	@Before
 	public void startBrowser() {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver.exe");		
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/chromedriver.exe");		
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(getProperty("src/test/resources/app.properties", "timeOut_duration"))));
 		jse = (JavascriptExecutor)driver;
