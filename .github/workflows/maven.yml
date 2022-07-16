@@ -25,4 +25,4 @@ jobs:
     - name: Build with Maven
       run: |
         cd ./BDD/
-        test -Dcucumber.filter.tags="@Smoke"
+        mvn test
