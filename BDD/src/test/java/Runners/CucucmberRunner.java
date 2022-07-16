@@ -11,7 +11,7 @@ glue= {"stepDefinitions", "Utilities"},
 dryRun = false,
 publish = true,
 monochrome = true,
-tags = ("@wip132 or @Test"),
+tags = ("@wip13212 or @Smoke"),
 plugin = {"pretty", "html:target/HTMLReports.html", 
 		"json:target/JSON/Reports.json",
 		"rerun:target/rerun.txt"}
