@@ -31,4 +31,4 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_KEY }}
         branch: gh-pages
-        folder: ./Spark/
+        folder: Spark
