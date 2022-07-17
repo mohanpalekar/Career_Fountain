@@ -1,4 +1,4 @@
 # Career_Fountain
 Career Fountain Automation Sessions
 
-https://github.com/mohanpalekar/Career_Fountain/blob/c682b8ad239597618c462d192cfbbead43f50421/.github/workflows/maven.yml
+[![Java CI with Maven](https://github.com/mohanpalekar/Career_Fountain/actions/workflows/maven.yml/badge.svg)](https://github.com/mohanpalekar/Career_Fountain/actions/workflows/maven.yml)
