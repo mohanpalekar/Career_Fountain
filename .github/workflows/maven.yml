@@ -27,7 +27,7 @@ jobs:
         cd ./BDD/
         mvn test
     - name: Deploy pages
-    - uses: JamesIves/github-pages-deploy-action@4.1.5
+      uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
         branch: FlashRemote
         folder: ./test-output/Spark   
